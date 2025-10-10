@@ -141,3 +141,95 @@
         @apply bg-background text-foreground;
     }
 }
+
+
+/* BUTTONS */
+.btn {
+    @apply px-3 py-2 cursor-pointer rounded-md text-center hover:bg-neutral-200 hover:text-neutral-800 transition;
+}
+
+.btn-danger {
+    @apply bg-red-600 hover:bg-red-400 text-white;
+}
+
+.btn-success {
+    @apply bg-green-600 hover:bg-green-400 text-white;
+}
+
+.btn-secondary {
+  @apply bg-neutral-800 hover:text-neutral-200 dark:bg-neutral-200 dark:text-neutral-800 dark:hover:bg-transparent dark:hover:text-neutral-200; 
+}
+/* END BUTTONS */
+
+/* TABLE */
+/* styles.css o dentro de tu archivo .scss si usas Tailwind */
+.table-container {
+  @apply overflow-x-auto sm:rounded-lg;
+}
+
+table {
+  @apply w-full text-sm text-left rtl:text-right text-gray-800 dark:text-gray-100;
+}
+
+table thead {
+  @apply text-xs text-gray-700 uppercase bg-gray-200 dark:bg-neutral-900 dark:text-gray-400;
+}
+
+table th,
+table td {
+  @apply px-6 py-4;
+}
+
+table tbody tr {
+  @apply odd:bg-sidebar-accent odd:dark:bg-neutral-800 even:bg-sidebar even:dark:bg-neutral-700 border-b border-gray-200 dark:border-neutral-900;
+}
+
+table tbody th {
+  @apply font-medium text-gray-900 whitespace-nowrap dark:text-white;
+}
+
+table a {
+  @apply font-medium text-blue-600 dark:text-blue-500 hover:underline;
+}
+
+/* END TABLE */
+
+
+/* MODAL */
+.contenedor-modal {
+  @apply fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/50;
+}
+
+.contenedor-modal > div {
+  @apply relative p-4 w-full max-w-md max-h-full;
+}
+
+.modal {
+  @apply relative bg-white rounded-lg shadow-lg dark:bg-neutral-700;
+}
+
+.header-modal {
+  @apply flex items-center justify-between p-4 border-b rounded-t dark:border-neutral-500;
+}
+
+.header-modal h3 {
+  @apply text-lg font-semibold text-gray-900 dark:text-white;
+}
+
+.footer {
+  @apply p-4 border-t dark:border-neutral-500;
+}
+/* END MODAL */
+
+/* FORM INPUT */
+.form-control {
+  @apply mb-3;
+}
+
+.form-control label {
+  @apply block mb-2 ml-2;
+}
+.form-control :is(input, textarea) {
+  @apply bg-white dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-500/80 rounded w-full p-2 text-neutral-600 dark:text-neutral-200 focus:ring-2 outline-none focus:outline-2 focus:outline-neutral-950 dark:focus:outline-neutral-500;
+}
+/* END FORM INPUT */
